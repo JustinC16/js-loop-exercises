@@ -10,7 +10,17 @@ exports.loops = {
    *
    * @outcome 627
    */
-  sum: (arr1, arr2) => {},
+  sum: (arr1, arr2) => {
+    let sum = 0;
+    for (let i = 0; i < arr1.length; i++) {
+      sum += arr1[i];
+    }
+    for (let i = 0; i < arr2.length; i++) {
+      sum += arr2[i];
+    }
+    return sum;
+  },
+  
 
   /**
    * Using a loop to print all even numbers up to and including n. Don’t include 0.
